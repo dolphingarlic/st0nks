@@ -19,12 +19,9 @@ h2 {
 
 .page-footer {
     background-color: #1d1d1d;
+    color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
-
-.white {
-    color: #eee !important;
 }
 
 @media screen and (max-width: 767px) {

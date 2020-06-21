@@ -3,6 +3,9 @@ import random
 
 from flask import Flask, render_template
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 STATUS = [
     'RISES',
@@ -19,7 +22,7 @@ STATUS = [
 
 URL = ('http://newsapi.org/v2/top-headlines?'
        'language=en&'
-       f'apiKey={os.environ["API_KEY"]}')
+       f'apiKey={os.getenv("API_KEY")}')
 
 app = Flask(__name__)
 
@@ -34,4 +37,4 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='127.0.0.1', port=8080)

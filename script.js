@@ -12,12 +12,13 @@ let chosen_adjective =
 document.getElementById("stonk-state").innerHTML = chosen_adjective;
 
 let url = "https://newsapi.org/v2/top-headlines?language=en";
-let req = new Request(url);
-
-fetch(url, {
+let req = new Request(url, {
+    method: "GET",
     headers: { "X-Api-Key": "8ea847ede21a429ab8e00cf40c3199af" },
     mode: "no-cors",
-})
+});
+
+fetch(req)
     .then((data) => data.json())
     .then((res) => {
         document.getElementById("headline").innerHTML =

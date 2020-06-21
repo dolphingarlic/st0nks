@@ -24,7 +24,7 @@ URL = ('http://newsapi.org/v2/top-headlines?'
 app = Flask(__name__)
 
 
-@ app.route('/')
+@app.route('/')
 def home():
     response = requests.get(URL)
     articles = response.json()['articles']

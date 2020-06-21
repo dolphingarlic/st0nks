@@ -1,0 +1,49 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+}
+
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #1d1d1d;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.white {
+    color: #eee !important;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: .8rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 1.6rem;
+    }
+}

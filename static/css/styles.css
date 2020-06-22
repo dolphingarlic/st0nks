@@ -24,6 +24,10 @@ h2 {
     font-weight: bold;
 }
 
+code {
+    color: darkgreen;
+}
+
 .jumbotron {
     text-align: center;
 }

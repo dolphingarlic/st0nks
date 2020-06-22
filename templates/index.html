@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Real News Headlines + Fake Financial Predictions = St0nks">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114696886-6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114696886-6');
+    </script>
+
     <title>St0nks</title>
 </head>
 <body>
@@ -21,9 +35,10 @@
         <div class="container">
             <h3>How?</h3>
             <p>This website was made with <b>advanced AI</b>, including</p>
-            <p><code>random.choice(STATUS)</code></p>
+            <p><code>market_status = random.choice(STATUS)</code></p>
             <p>and</p>
-            <p><code>headline = random.choice(articles)['title'].upper()</code></p>
+            <p><code>headline = random.choice(articles)['title']</code></p>
+            <p>To get the headlines, I used <a href="https://newsapi.org/">NewsAPI</a></p>
 
             <h3>Why?</h3>
             <p>Why not?</p>

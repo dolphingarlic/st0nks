@@ -13,11 +13,13 @@ STATUS = [
     'SHOOTS UP',
     'SURGES',
     'HIKES',
+    'SKYROCKETS',
     'TANKS',
     'PLUMMETS',
     'NOSEDIVES',
     'CRASHES',
     'PLUNGES',
+    'SLUMPS',
 ]
 
 URL = ('http://newsapi.org/v2/top-headlines?'

@@ -1,0 +1,16 @@
+{
+    "short_name": "St0nks",
+    "name": "Real News Headlines + Fake Financial Predictions = St0nks",
+    "description": "Real News Headlines + Fake Financial Predictions = St0nks",
+    "icons": [
+        {
+            "src": "/static/favicon.ico",
+            "type": "image/vnd.micro+json",
+            "sizes": "256x256"
+        }
+    ],
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#333333"
+}

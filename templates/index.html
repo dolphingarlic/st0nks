@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Real News Headlines + Fake Financial Predictions = St0nks">
+    <meta name="description" content="Real News Headlines + Fake Financial Predictions = St0nks">
+    <meta name="theme-color" content="#333333">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -25,7 +27,7 @@
 <body>
     <main>
         <div class="jumbotron">
-            <div class="container">
+            <div class="container" id="market_status">
                 <h2>Stock market</h2>
                 <h1>{{status}}</h1>
                 <h2>as</h2>
@@ -33,16 +35,41 @@
             </div>
         </div>
         <div class="container">
+            <h2>Real News Headlines + Fake Financial Predictions = St0nks</h2>
+            <hr>
+
+            <h3>The World's Number 1<sup>*</sup> Market Predictor</h3>
+            <p><small><sup>*</sup>In terms of inaccuracy</small></p>
+
             <h3>How?</h3>
-            <p>This website was made with <b>advanced AI</b>, including</p>
-            <p><code>market_status = random.choice(STATUS)</code></p>
-            <p>and</p>
-            <p><code>headline = random.choice(articles)['title']</code></p>
-            <p>To get the headlines, I used <a href="https://newsapi.org/">NewsAPI</a></p>
+            <p>
+                This website was made with <b>advanced AI</b>, including
+                <b>cutting-edge algorithms</b> such as
+                <code>import random</code> and
+                <code>random.choice()</code>.
+            </p>
+            <p>
+                Luckily for all you AI aficionados, I have made the code
+                for this <b>open-source</b> so that you can learn from it. You can find
+                the code <a href="https://github.com/dolphingarlic/st0nks">on GitHub</a>.
+            </p>
 
             <h3>Why?</h3>
-            <p>Why not?</p>
-            <p>Inspired by <a href="https://www.smbc-comics.com/comic/markets">this SMBC comic</a></p>
+            <p>
+                In these times of confusion, the world desperately needed a
+                <b>reliable market predictor</b> made <b>for the people, by the people</b>.
+            </p>
+            <p>
+                Being the philanthropist I am, I <b>seized this golden opportunity</b> and
+                created the beautiful website you are currently viewing.
+            </p>
+            <p>
+                <a href="https://www.smbc-comics.com/comic/markets">This SMBC comic</a> inspired me
+                to make this website, and I hope this website inspires you.
+            </p>
+
+            <h3>When?</h3>
+            <p><b>Right now</b> - St0nks fetches real-time news to make predictions.</p>
         </div>
     </main>
     <footer class="page-footer text-center">

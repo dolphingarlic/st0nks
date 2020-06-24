@@ -24,12 +24,11 @@ h2 {
     font-weight: bold;
 }
 
-code {
-    color: darkgreen;
-}
-
 .jumbotron {
+    display: flex;
+    align-items: center;
     text-align: center;
+    min-height: 100vh;
 }
 
 footer {

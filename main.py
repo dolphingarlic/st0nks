@@ -22,6 +22,8 @@ STATUS = [
     'SLUMPS',
 ]
 
+CACHE = []
+
 URL = ('http://newsapi.org/v2/top-headlines?'
        'language=en&'
        f'apiKey={os.getenv("API_KEY")}')
@@ -31,11 +33,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    response = requests.get(URL)
-    articles = response.json()['articles']
-    headline = random.choice(articles)['title'].upper()
+    global CACHE
+    if len(CACHE) == 0:
+        response = requests.get(URL)
+        CACHE = response.json()['articles']
 
-    return render_template('index.html', status=random.choice(STATUS), headline=headline)
+    article = random.choice(CACHE)
+    CACHE.remove(article)
+
+    return render_template('index.html', status=random.choice(STATUS), headline=article['title'].upper())
 
 
 if __name__ == '__main__':

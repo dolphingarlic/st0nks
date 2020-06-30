@@ -1,0 +1,4 @@
+cron:
+- description: "Tweet market status every hour"
+  url: /tweet/
+  schedule: every 1 hours

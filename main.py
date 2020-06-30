@@ -63,7 +63,7 @@ def tweet():
     try:
         tweepy_api.verify_credentials()
         tweepy_api.update_status(
-            f'St0nks Update:\n\nStock market {status} as {headline}' +
+            f'Hourly #St0nks Update:\n\nStock market {status} as {headline}' +
             '\n\n(This is for entertainment purposes only. ' +
             'This Tweet was sent automatically using st0nks.ml)')
         return Response(status=200)
